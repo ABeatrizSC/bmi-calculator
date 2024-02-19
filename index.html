@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeto calculadora de IMC com validação de formulário utilizando JavaScript.">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <img class="container__img" src="src/assets/workout.png" alt="Guaxinim levantando peso">
+      <div class="container__form-container">
+        <h1>Calculadora de <span class="h1-highlight">IMC</span></h1>
+        <div class="title-line"></div>
+        <form class="form" action="">
+          <div class="form__container-input">
+            <label for="input-weight">Seu peso</label>
+            <div class="input-style">
+              <input type="number" id="input-weight">
+              <span>Kg</span>
+            </div>
+          </div>
+          <div class="form__container-input">
+            <label for="input-weight">Sua altura</label>
+            <div class="input-style invalid-field">
+              <input type="number" id="input-height">
+              <span>cm</span>
+            </div>
+          </div>
+          <button class="form-button" type="button">Calcular</button>
+        </form>
+        <div class="form__container-answer">
+          <p>Seu IMC é 00.00</p>
+          <p>Classificação: <span class="answer-highlight">Peso ideal</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="made-by">Desenvolvido por <a target="_blank" href="https://github.com/ABeatrizSC">ABeatrizSC</a></p>
+    <script src="src/scripts/main.js"></script>
+  </body>
+</html>
