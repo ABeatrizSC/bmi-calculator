@@ -64,7 +64,6 @@ p, label {
 
     & .container__form-container {
         width: fit-content;
-        height: 100%;
         padding: 2rem 2.5rem;
         background-color: #262626;
         border-radius: 1rem;
@@ -75,7 +74,7 @@ p, label {
             margin-top: 2.5rem;
             display: flex;
             flex-direction: column;
-            gap: 2.2rem;
+            gap: 1rem;
 
             & #input-weight, #input-height {
                 -moz-appearance: textfield;
@@ -119,6 +118,12 @@ p, label {
                 & .invalid-field {
                     box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 0.627);
                 }
+
+                & .error-message {
+                    visibility: hidden;
+                    color: rgb(167, 11, 11);
+                    margin-top: 0.3rem;
+                }
             }
 
             & .form-button {
@@ -137,14 +142,20 @@ p, label {
         }
 
         & .form__container-answer {
+            display: none;
             margin-top: 2rem;
 
-            p {
+            & p {
                 font-size: 1.3rem;
             }
 
-            & .answer-highlight {
-                color: rgb(25, 25, 202);
+            & span {
+                font-weight: 600;
+            }
+
+            & .answer-bmi-highlight {
+                color: #7A508F;
+                font-size: 1.7rem;
             }
         }
     }
