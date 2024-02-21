@@ -47,23 +47,22 @@ function showTheResultOnScreen(bmi) {
 }
 
 function areTheFieldsValid(weight, height) {
-    const validationPattern = new RegExp(/^\d{0,3}(\.\d{0,2})?$/i);
+    const weightValidationPattern = new RegExp(/^\d{0,3}(\.\d{0,2})?$/i);
+    const heightValidationPattern = new RegExp(/^\d{1}(\.\d{0,2})+$/i);
     
-    isWeightValid = validationPattern.test(weight);
-    isHeightValid = validationPattern.test(height);
+    isWeightValid = weightValidationPattern.test(weight) && weight > 0;
+    isHeightValid = heightValidationPattern.test(height);
 
     if (isWeightValid && isHeightValid) {
         return true;
     }
 
-    styleInvalidFields(isWeightValid, isHeightValid);
+    setInvalidFieldsStyle(isWeightValid, isHeightValid);
 
-    const containerAnswer = document.getElementById('container-answer').style.display = 'none';
     return false; 
 }
 
-function styleInvalidFields(isWeightValid, isHeightValid) {
-    const inputsContainersArrays = document.getElementsByClassName('form__container-input');
+function setInvalidFieldsStyle(isWeightValid, isHeightValid) {
     const inputStyleArray = document.getElementsByClassName('input-style');
     const errorMessagesArray = document.getElementsByClassName('error-message'); 
 
@@ -76,6 +75,8 @@ function styleInvalidFields(isWeightValid, isHeightValid) {
         inputStyleArray[1].classList.add('invalid-field');
         errorMessagesArray[1].style.visibility = 'visible';
     }
+
+    document.getElementById('container-answer').style.display = 'none';
 }
 
 function removeStyleInvalidFields() {

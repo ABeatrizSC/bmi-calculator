@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* #452e98 */
-
 html {
     width: 100dvw;
     height: 100dvh;
@@ -172,5 +170,15 @@ p, label {
     & a {
         color: #7A508F;
         text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 652px) {
+    .container {
+        justify-content: center;
+        width: auto;
+        & .container__img {
+            display: none;
+        }
     }
 }
