@@ -29,16 +29,21 @@ button {
 }
 
 h1 {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.348);
     
     & .h1-highlight {
         color: #7A508F;
+        font-size: inherit;
     }
 }
 
 p, label {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+span {
+    font-size: 1.3rem;
 }
 
 .title-line {
@@ -49,19 +54,19 @@ p, label {
 }
 
 .container {
-    width: 60rem;
-    height: 35rem;
+    width: auto;
+    height: 45rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 5rem;
 
     & .container__img {
-        width: 23rem;
+        width: 28rem;
     }
 
     & .container__form-container {
-        width: fit-content;
+        width: 35rem;
         padding: 2rem 2.5rem;
         background-color: #262626;
         border-radius: 1rem;
@@ -100,12 +105,12 @@ p, label {
                         border: 0;
                         outline: none;
                         color: inherit;
-                        padding: 0.5rem 0.5rem 0.5rem 1rem;
+                        padding: 0.7rem 0.7rem 0.7rem 1.2rem;
                     }
 
                     & span {
                         width: 25%;
-                        height: 2.7rem;
+                        height: 2.9rem;
                         background-color: #434343;
                         display: flex;
                         align-items: center;
@@ -119,7 +124,7 @@ p, label {
 
                 & .error-message {
                     visibility: hidden;
-                    color: rgb(167, 11, 11);
+                    color: rgb(171, 14, 14);
                     margin-top: 0.3rem;
                 }
             }
@@ -128,8 +133,9 @@ p, label {
                 width: fit-content;
                 color: inherit;
                 font-family: inherit;
+                font-size: 1.7rem;
                 background-color: #7A508F;
-                padding: 0.7rem 1.5rem;
+                padding: 0.7rem 1.7rem;
                 border-radius: 1.5rem;
                 transition: background-color 300ms ease-in-out;
 
@@ -144,7 +150,7 @@ p, label {
             margin-top: 2rem;
 
             & p {
-                font-size: 1.3rem;
+                font-size: 1.6rem;
             }
 
             & span {
@@ -160,7 +166,7 @@ p, label {
 }
 
 .made-by {
-    color: #5b5b5b;
+    color: #898989;
     font-weight: 600;
     bottom: 0;
     margin-bottom: 1.5rem;
@@ -170,10 +176,15 @@ p, label {
     & a {
         color: #7A508F;
         text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
-@media screen and (max-width: 652px) {
+@media screen and (max-width: 685px) {
     .container {
         justify-content: center;
         width: auto;
