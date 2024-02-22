@@ -16,6 +16,10 @@
   [Sobre](#sobre)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Deploy](#deploy)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Utilizacoes](#utilizacoes)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Instalacoes necessarias](#instalacoes)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; [Contato](#contato)
 </div>
 
+
+https://github.com/ABeatrizSC/bmi-calculator/assets/105675205/2b8f56e9-a590-4596-adb2-676ad8ffd839
+
+
 <h2 name="sobre">📝Sobre</h2>
 <ul style="display: flex; flex-direction: column; gap: 15px">
   <li>
